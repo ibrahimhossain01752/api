@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const User = () => {
     const [services, setServices] = useState([]);
@@ -14,9 +14,7 @@ const User = () => {
                 {services.map((pd, idx) => (
                     <div class="col">
                     <div class="card h-100 ">
-                     <div class="imgBx">
-                     <img src={pd?.img} class="card-img-top images44" alt="..."/>
-                     </div>
+                     
                       <div class="card-body contentBx ">
                         <h5 class="card-title">{pd?.login}</h5>
                         <p class="card-text">{pd?.node_id}</p>
@@ -35,9 +33,9 @@ const User = () => {
                         <p class="card-text">{pd?.received_events_url}</p>
                         <p class="card-text">{pd?.type}</p>
                         <p class="card-text">{pd?.site_admin}</p>
-                        <Link to={`/users/${pd._id}`}>{" "}
-                        <button class="btn23">Shop Now</button>
-                        </Link>
+                        {/* <Link to={`/users/${pd._id}`}>{" "} */}
+                        
+                        {/* </Link> */}
                         </div>
                         </div>
                       </div>
