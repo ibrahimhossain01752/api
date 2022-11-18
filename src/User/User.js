@@ -18,8 +18,23 @@ const User = () => {
                      <img src={pd?.img} class="card-img-top images44" alt="..."/>
                      </div>
                       <div class="card-body contentBx ">
-                        <h5 class="card-title">{pd?.title}</h5>
-                        <p class="card-text">{pd?.price}</p>
+                        <h5 class="card-title">{pd?.login}</h5>
+                        <p class="card-text">{pd?.node_id}</p>
+                        <p class="card-text">{pd?.avatar_url}</p>
+                        <p class="card-text">{pd?.gravatar_id}</p>
+                        <p class="card-text">{pd?.url}</p>
+                        <p class="card-text">{pd?.html_url}</p>
+                        <p class="card-text">{pd?.followers_url}</p>
+                        <p class="card-text">{pd?.following_url}</p>
+                        <p class="card-text">{pd?.gists_url}</p>
+                        <p class="card-text">{pd?.starred_url}</p>
+                        <p class="card-text">{pd?.subscriptions_url}</p>
+                        <p class="card-text">{pd?.organizations_url}</p>
+                        <p class="card-text">{pd?.repos_url}</p>
+                        <p class="card-text">{pd?.events_url}</p>
+                        <p class="card-text">{pd?.received_events_url}</p>
+                        <p class="card-text">{pd?.type}</p>
+                        <p class="card-text">{pd?.site_admin}</p>
                         <Link to={`/users/${pd._id}`}>{" "}
                         <button class="btn23">Shop Now</button>
                         </Link>
